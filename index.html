@@ -21,7 +21,7 @@
 			}
 			.forground{
 				width:80%;
-				height: calc(100% - 50px);;
+				height: 80%;
 				background-color:#424242;
 				position:absolute;
 				top:25px;
@@ -58,10 +58,18 @@
 				margin-left:-50px;
 			}
 			div.content{
-				height: calc(100% - 150px);
+				height: 75%;
 				width:20%;
 				border:3px solid black;
 				float:left;
+			}
+			@media (max-height:1000px){
+				.forground{
+					height: calc(100% - 50px);
+				}
+				div.content{
+					height: calc(100% - 150px);
+				}
 			}
 			div#fst{
 				background-color:#fff4cc;
