@@ -33,6 +33,86 @@
 			h1{
 				padding-bottom:10px
 			}
+			div.inside{
+				height: 92.28%;
+				width: 100%;
+				background-color:#222222;
+			}
+			div.content{
+				height: 80%;
+				width:20%;
+				border:3px solid black;
+				float:left;
+			}
+			div#fst{
+				background-color:#fff4cc;
+				position: absolute;
+				left: 15%;
+				margin-left:-10%;
+			}
+			div#snd{
+				background-color:#246ebd;
+				position: absolute;
+				left: 38.3333%;
+				margin-left:-10%;
+			}
+			div#trd{
+				background-color:#690a0a;
+                position: absolute;
+		        left: 61.6666%;
+		        margin-left:-10%;
+        	}
+   		    div#fth{
+				background-color:#d1d0ce;
+				position: absolute;
+				left: 85%;
+				margin-left:-10%;
+            }
+			@media (max-height:700px){
+				.forground{
+					height: calc(100% - 50px);
+				}
+				div.inside{
+					height: calc(100% - 90px);
+					left: 500%;
+				}
+				div.content{
+					height: calc(100% - 150px);
+				}
+			}
+			@media (max-width:900px){
+				.forground{
+					min-height: 500px;
+				}
+				div.content{
+					width: 44%;
+				}
+				div#fst{
+					top: calc(0% + 150px);
+					left: 26.5%;
+					margin-left: -22%;
+					height: calc(100% - 375px);
+				}
+				div#snd{
+					top: calc(0% + 150px);
+					left: 73.5%;
+					margin-left: -22%;
+					height: calc(100% - 375px);
+				}
+				div#trd{
+					top: calc(35% + 150px);
+					left: 26.5%;
+					margin-left: -22%;
+					height: calc(100% - 375px);
+				}
+				div#fth{
+					top: calc(35% + 150px);
+					left: 73.5%;
+					margin-left: -22%;
+					height: calc(100% - 375px);
+				}
+			}
+			
 			a, a:hover, a:visited {
 				text-decoration: none;
 				color:inherit;
@@ -58,121 +138,83 @@
 				margin-top:-50px;
 				margin-left:-50px;
 			}
-			div.content{
-				height: 76.92%;
-				width:20%;
-				border:3px solid black;
-				float:left;
-			}
-			@media (max-height:700px){
-				.forground{
-					height: calc(100% - 50px);
-				}
-				div.content{
-					height: calc(100% - 150px);
-				}
-			}
-			div#fst{
-				background-color:#fff4cc;
-				position: absolute;
-				left: 15%;
-				margin-left:-10%;
-			}
-			div#snd{
-				background-color:#246ebd;
-				position: absolute;
-				left: 38.3333%;
-				margin-left:-10%;
-			}
-			div#trd{
-				background-color:#690a0a;
-                position: absolute;
-                left: 61.6666%;
-               	margin-left:-10%;
-            }
-            div#fth{
-				background-color:#d1d0ce;
-				position: absolute;
-				left: 85%;
-				margin-left:-10%;
-            }
 		</style>
 	</head>
 	<body>
-		<b 
+		<div
 			class= "forground">
 			<h1 
 				align= "center"> 
-				Jake Steven Zimmermann Simmons 
+					Jake Steven Zimmermann Simmons
 			</h1>
-			<a 
-				style= "display:block" 
-				href= "files/resume.pdf">
-				<div 
-					class= "content" 
-					id= "fst">
-					<img 
-						class="inpic" 
-						id="fst" 
-						style="" 
-						src="files/Feather.png" 
-						width="100px" 
-						height="100px" 
-						alt="Feather pic">
-					</img>
-				</div>
-			</a>
-			<a 
-				style= "display:block" 
-				href= "Photos.html">
-				<div 
-					class= "content" 
-					id= "snd">
-					<img 
-						class="inpic" 
-						id="snd" 
-						style="" 
-						src="files/Cam.png" 
-						width="98px" 
-						height="67px" 
-						alt="Camera pic">
-					</img>
-				</div>
-			</a>
-			<a 
-				style= "display:block" 
-				href= "Summary.html">
-				<div 
-					class= "content" 
-					id= "trd">
-					<img 
-						class="inpic" 
-						id="trd" 
-						style="" 
-						src="files/Flame.png" 
-						width="100px" 
-						height="100px" 
-						alt="Flame pic">
-					</img>
-				</div>
-			</a>
-			<a 
-				style= "display:block" 
-				href= "OtherProjects.html">
-				<div 
-					class= "content" 
-					id= "fth">
-					<img 
-						class="inpic" 
-						id="fth" 
-						style="" 
-						src="files/Sword.png" 
-						width="100px" 
-						height="100px" 
-						alt="Sword pic">
-					</img>
-				</div>
-			</a>
-		</b>
+				<a 
+					style= "display:block" 
+					href= "files/resume.pdf">
+					<div 
+						class= "content" 
+						id= "fst">
+						<img 
+							class="inpic" 
+							id="fst" 
+							style="" 
+							src="files/Feather.png" 
+							width="100px" 
+							height="100px" 
+							alt="Feather pic">
+						</img>
+					</div>
+				</a>
+				<a 
+					style= "display:block" 
+					href= "Photos.html">
+					<div 
+						class= "content" 
+						id= "snd">
+						<img 
+							class="inpic" 
+							id="snd" 
+							style="" 
+							src="files/Cam.png" 
+							width="98px" 
+							height="67px" 
+							alt="Camera pic">
+						</img>
+					</div>
+				</a>
+				<a 
+					style= "display:block" 
+					href= "Summary.html">
+					<div 
+						class= "content" 
+						id= "trd">
+						<img 
+							class="inpic" 
+							id="trd" 
+							style="" 
+							src="files/Flame.png" 
+							width="100px" 
+							height="100px" 
+							alt="Flame pic">
+						</img>
+					</div>
+				</a>
+				<a 
+					style= "display:block" 
+					href= "OtherProjects.html">
+					<div 
+						class= "content" 
+						id= "fth">
+						<img 
+							class="inpic" 
+							id="fth" 
+							style="" 
+							src="files/Sword.png" 
+							width="100px" 
+							height="100px" 
+							alt="Sword pic">
+						</img>
+					</div>
+				</a>
+		</div>
 	</body>
 </html>
