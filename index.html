@@ -30,6 +30,21 @@
 				margin-left:-40%;
 				padding:30px;
 			}
+			div.header{
+				position: absolute;
+				top:0px;
+				height:120px;
+				width:100%;
+				margin-left:-30px;
+				text-align: center;
+			}
+			.center {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				height: 145px;
+				border: 3px solid green;
+			}
 			h1{
 				padding-bottom:10px;
 			}
@@ -101,20 +116,6 @@
 					height: calc(33%);
 				}
 			}
-			@media (max-width:759.5px){
-				h1{
-					position: relative; 
-					top: -15px;
-					padding-bottom:10px
-				}
-			}
-			@media (max-width:517px){
-				h1{
-					position: relative; 
-					top: -40px;
-					padding-bottom:10px
-				}
-			}
 			a, a:hover, a:visited {
 				text-decoration: none;
 				color:inherit;
@@ -145,10 +146,15 @@
 	<body>
 		<div
 			class= "forground">
-			<h1 
-				align= "center"> 
-					Jake Steven Zimmermann Simmons
-			</h1>
+			<div 
+				class="header">
+				<div
+					class="center">
+					<h1> 
+						Jake Steven Zimmermann Simmons
+					</h1>
+				</div>
+			</div>
 			<a 
 				style= "display:block" 
 				href= "files/resume.pdf">
