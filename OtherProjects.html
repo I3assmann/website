@@ -32,6 +32,18 @@
 				margin-left:-40%;
 				padding:30px;
 			}
+			div.header{
+				position: absolute;
+				top:0px;
+				width:calc(100% - 60px);
+				text-align: center;
+			}
+			.center {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				height: 145px;
+			}
 			h1{
 				padding-bottom:10px
 			}
@@ -39,17 +51,6 @@
 				text-decoration: none;
 				color:inherit;
 			}
-			p.link{
-				position:absolute;
-				left:15%;
-			}
-			p#fst{
-				top:215px;
-			}
-			p#Snd{
-				top:365px;
-			}
-
 			img.inpic{
 				position:absolute;
 				top:0%;
@@ -86,9 +87,15 @@
 	</head>
 	<body>
 		<b class= "forground">
-			<h1 align= "center"> 
-				Other Projects 
-			</h1>
+			<div 
+				class="header">
+				<div
+					class="center">
+					<h1> 
+						Other Projects
+					</h1>
+				</div>
+			</div>
 			<a style= "display:block" 
 				href= "World.html">
 				<div class= "content" 
