@@ -42,3 +42,15 @@
 				top:0%;
 				left:0%;
 			}
+			.pdf-embed-container::-webkit-scrollbar {
+			    width: 0;
+			    height: 0;
+			}
+
+			.pdf-embed-container iframe {
+			    -webkit-user-select: none; /* Disable selection */
+			    -moz-user-select: none;
+			    -ms-user-select: none;
+			    user-select: none;
+			    pointer-events: none; /* Disable interaction with embedded PDF */
+			}

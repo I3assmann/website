@@ -68,14 +68,14 @@
 			}
 			div#trd{
 				background-color:#690a0a;
-		        left: 61.6666%;
-		        margin-left:-10%;
-        	}
-   		    div#fth{
+		        	left: 61.6666%;
+		        	margin-left:-10%;
+        		}
+   			div#fth{
 				background-color:#d1d0ce;
 				left: 85%;
 				margin-left:-10%;
-            }
+            		}
 			@media (max-height:700px){
 				.forground{
 					height: calc(100% - 50px);
@@ -126,20 +126,46 @@
 				left:50%;
 			}
 			img#fst{
-				margin-top:-50px;
+				margin-top:-52px;
 				margin-left:-50px;
 			}
 			img#snd{
-				margin-top:-33px;
+				margin-top:-31px;
 				margin-left:-49px;
 			}
 			img#trd{
-				margin-top:-50px;
+				margin-top:-52px;
 				margin-left:-50px;
 			}
 			img#fth{
-				margin-top:-50px;
+				margin-top:-52px;
 				margin-left:-50px;
+			}
+			p.intext{
+				font-weight: bold;
+				position:absolute;
+				top:50%;
+				left:50%;
+			}
+			p#fst{
+				color:black;
+				margin-top:53px;
+				margin-left:-20px;
+			}
+			p#snd{
+				color:#ADD8E6;
+				margin-top:53px;
+				margin-left:-24px;
+			}
+			p#trd{
+				color:#FC7418;
+				margin-top:53px;
+				margin-left:-44px;
+			}
+			p#fth{
+				color:#616161;
+				margin-top:53px;
+				margin-left:-53px;
 			}
 		</style>
 	</head>
@@ -169,7 +195,13 @@
 						width="100px" 
 						height="100px" 
 						alt="Feather pic">
+						
 					</img>
+					<p
+						class="intext"
+						id="fst">
+						Work
+					</p>
 				</div>
 			</a>
 			<a 
@@ -187,6 +219,11 @@
 						height="67px" 
 						alt="Camera pic">
 					</img>
+					<p
+						class="intext"
+						id="snd">
+						Gallery
+					</p>
 				</div>
 			</a>
 			<a 
@@ -204,6 +241,12 @@
 						height="100px" 
 						alt="Flame pic">
 					</img>
+					<p
+						class="intext"
+						id="trd">
+						Description
+					</p>
+
 				</div>
 			</a>
 			<a 
@@ -221,6 +264,11 @@
 						height="100px" 
 						alt="Sword pic">
 					</img>
+					<p
+						class="intext"
+						id="fth">
+						Miscellaneous
+					</p>
 				</div>
 			</a>
 		</div>
